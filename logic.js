@@ -93,3 +93,109 @@ console.log('Daftar acara ==>',jadwalFestival('Sabtu', 'hujan', 23, 30));
 console.log( 'Daftar acara ==>' , jadwalFestival('Sabtu', 'hujan', 23, 10));
 console.log('Daftar acara ==>' ,jadwalFestival('Minggu', 'Cerah', 27, 8));
 console.log('Daftar acara ==>' ,jadwalFestival('senin', 'Cerah', 27, 10));
+
+
+
+
+
+function evenNumb(x) {
+    let number = [];
+    for (let index = 1; index < x; index++) {
+        if (index%2 == 0){
+        number.push(index);
+        }
+        
+    }
+    return number;
+}
+
+console.log("-----------------GENAP -> 100--------------");
+console.log(evenNumb(100));;
+
+function sumNum(x){
+i = 1;
+let total = 0;
+while(i <= 100){
+    total += i;
+    i++;
+}
+return total
+}
+console.log("-----------------jumlah -> 100--------------");
+console.log(sumNum(100));
+
+
+
+function rightTriangle(x){
+    let stars =" ";
+    for (let index = 0; index <= x; index++) {
+        for (let j = 0; j < index; j++) {
+           stars += "x";
+        }
+        stars += '\n';
+        
+    }
+    return stars;
+}
+console.log("-----------------segitiga siku--------------");
+console.log(rightTriangle(5));
+
+
+function segitigaTerbalik(x){
+    let stars = "";
+    for (let index = 0; index <= x ; index++) {
+        for (let j = x; j > index; j--) {
+            stars += "x";
+         }
+         stars += '\n';
+        
+    }
+    return stars;
+}
+console.log("-----------------segitiga terbalik--------------");
+console.log(segitigaTerbalik(5));
+
+function diamond(size) {
+    let col = size * 2 - 1;
+    for (let i = 1; i <= size; i++) {
+      let s = "";
+      for (let j = 1; j <= col; j++) {
+        if (j >= size + 1 - i && j <= size - 1 + i) {
+          s += "*";
+        } else {
+          s += " ";
+        }
+      }
+      console.log(s);
+    }
+    for (let i = size - 1; i >= 1; i--) {
+      let s = "";
+      for (let j = 1; j <= col; j++) {
+        if (j >= size + 1 - i && j <= size - 1 + i) {
+          s += "*";
+        } else {
+          s += " ";
+        }
+      }
+      console.log(s);
+    }
+  }
+  console.log(diamond(5));
+
+
+function rightNum(x){
+    let stars ="";
+    for (let index = 0; index <= x; index++) {
+        for (let j = 1; j <= index; j++) {
+           if(j => 1 ){
+            stars += "*";
+           }
+            stars += j ;
+            
+        }
+        stars += '\n';
+        
+    }
+    return stars;
+}
+console.log(rightNum(5));
