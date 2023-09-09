@@ -63,8 +63,8 @@ console.log(parkFee(6,"minggu","true"));
 
 function jadwalFestival(hari,cuaca,suhu,angin){
  let acara = [];
- cuaca.toLowerCase();
- acara.push("pameran seni");
+
+ 
  
  if (cuaca == "hujan" && angin < 20){
      acara.push("acara dalam ruangan");
@@ -82,7 +82,7 @@ function jadwalFestival(hari,cuaca,suhu,angin){
     if(angin > 20){
         acara.pop("pesta es krim", "marathon senja")
     }
-              
+    acara.push("pameran seni");
                
 return acara;
 
